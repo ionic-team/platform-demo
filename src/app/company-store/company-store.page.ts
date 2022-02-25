@@ -7,6 +7,7 @@ import { companyStoreProducts } from 'src/data/storeData';
 import { ImplementationModalPage } from '../implementation-modal/implementation-modal.page';
 import { Haptics } from '@capacitor/haptics';
 import { Platform } from '@ionic/angular';
+import { ARLauncherPage } from '../ar-launcher/ar-launcher.page';
 
 @Component({
   selector: 'app-company-store',
@@ -129,6 +130,16 @@ export class CompanyStorePage implements OnInit {
     });
      
     modal.onDidDismiss().then((result) => { });
+    
+    return await modal.present();
+  }
+
+  async openAR() {
+    const modal: HTMLIonModalElement = await this.modalController.create({
+      component: ARLauncherPage,
+      swipeToClose: true,
+      presentingElement: this.routerOutlet.nativeEl
+    });
     
     return await modal.present();
   }

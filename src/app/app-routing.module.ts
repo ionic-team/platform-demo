@@ -55,6 +55,14 @@ const routes: Routes = [
         (m) => m.BookTravelPageModule
       ),
   },
+  {
+    path: 'ar-launcher',
+    loadChildren: () => import('./ar-launcher/ar-launcher.module').then( m => m.ArLauncherPageModule)
+  },
+  {
+    path: 'ar-launcher',
+    loadChildren: () => import('./ar-launcher/ar-launcher.module').then( m => m.ArLauncherPageModule)
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
