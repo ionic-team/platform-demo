@@ -6,9 +6,9 @@ import { IonicModule } from "@ionic/angular";
 
 import { LegacyAmplifyUiModule } from "@aws-amplify/ui-angular/legacy";
 
-import { ItSupportPageRoutingModule } from "./it-support-routing.module";
+import { BookTravelPageRoutingModule } from "./book-travel-routing.module";
 
-import { ItSupportPage } from "./it-support.page";
+import { BookTravelPage } from "./book-travel.page";
 
 @NgModule({
   imports: [
@@ -16,8 +16,8 @@ import { ItSupportPage } from "./it-support.page";
     FormsModule,
     IonicModule,
     LegacyAmplifyUiModule,
-    ItSupportPageRoutingModule,
+    BookTravelPageRoutingModule,
   ],
-  declarations: [ItSupportPage],
+  declarations: [BookTravelPage],
 })
-export class ItSupportPageModule {}
+export class BookTravelPageModule {}

@@ -35,10 +35,10 @@ const routes: Routes = [
           ),
       },
       {
-        path: "it-support",
+        path: "book-travel",
         loadChildren: () =>
-          import("../it-support/it-support.module").then(
-            (m) => m.ItSupportPageModule
+          import("../book-travel/book-travel.module").then(
+            (m) => m.BookTravelPageModule
           ),
       },
       {
