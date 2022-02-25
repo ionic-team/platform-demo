@@ -1,29 +1,66 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
-import { TabsPage } from './tabs.page';
+import { TabsPage } from "./tabs.page";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     component: TabsPage,
     children: [
       {
-        path: 'employees',
+        path: "employees",
         children: [
-          { path: '', loadChildren: () => import('../employee-list/employee-list.module').then(m => m.EmployeeListPageModule) },
-          { path: 'detail/:id', loadChildren: () => import('../employee-detail/employee-detail.module').then(m => m.EmployeeDetailPageModule) }
+          {
+            path: "",
+            loadChildren: () =>
+              import("../employee-list/employee-list.module").then(
+                (m) => m.EmployeeListPageModule
+              ),
+          },
+          {
+            path: "detail/:id",
+            loadChildren: () =>
+              import("../employee-detail/employee-detail.module").then(
+                (m) => m.EmployeeDetailPageModule
+              ),
+          },
         ],
       },
-      { path: 'expenses', loadChildren: () => import('../expense-list/expense-list.module').then(m => m.ExpenseListPageModule) },
-      { path: 'settings', loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule) },
-      { path: 'store', loadChildren: () => import('../company-store/company-store.module').then(m => m.CompanyStorePageModule) }
-    ]
-  }
+      {
+        path: "expenses",
+        loadChildren: () =>
+          import("../expense-list/expense-list.module").then(
+            (m) => m.ExpenseListPageModule
+          ),
+      },
+      {
+        path: "book-travel",
+        loadChildren: () =>
+          import("../book-travel/book-travel.module").then(
+            (m) => m.BookTravelPageModule
+          ),
+      },
+      {
+        path: "settings",
+        loadChildren: () =>
+          import("../settings/settings.module").then(
+            (m) => m.SettingsPageModule
+          ),
+      },
+      {
+        path: "store",
+        loadChildren: () =>
+          import("../company-store/company-store.module").then(
+            (m) => m.CompanyStorePageModule
+          ),
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class TabsPageRoutingModule {}

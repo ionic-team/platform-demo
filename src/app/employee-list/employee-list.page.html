@@ -2,14 +2,18 @@
   <ion-toolbar>
     <ion-title>People</ion-title>
     <ion-buttons collapse="true" slot="end">
-      <ion-button (click)="openImplModal()" >
-        <ion-icon name="information-circle-outline"  size="large"
-          class="icon-toolbar-padding" color="primary">
+      <ion-button (click)="openImplModal()">
+        <ion-icon
+          name="information-circle-outline"
+          size="large"
+          class="icon-toolbar-padding"
+          color="primary"
+        >
         </ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-</ion-header> 
+</ion-header>
 
 <ion-content id="content" fullscreen>
   <cdk-virtual-scroll-viewport
@@ -21,12 +25,17 @@
     (scrolledIndexChange)="checkNextPage($event, '')">
     
     <!-- Doesn't work with cdk virtual scroll yet. -->
-    <!-- <ion-header collapse="condense">              
+    <!-- <ion-header collapse="condense">
       <ion-toolbar>
         <ion-buttons collapse="true" (click)="openImplModal()" slot="end">
           <ion-button slot="end">
-            <ion-icon name="information-circle-outline"  size="large"
-              class="icon-toolbar-padding" color="primary" (click)="openImplModal()">
+            <ion-icon
+              name="information-circle-outline"
+              size="large"
+              class="icon-toolbar-padding"
+              color="primary"
+              (click)="openImplModal()"
+            >
             </ion-icon>
           </ion-button>
         </ion-buttons>

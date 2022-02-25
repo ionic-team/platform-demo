@@ -1,18 +1,18 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+import { Routes, RouterModule } from "@angular/router";
 
-import { IonicModule } from '@ionic/angular';
+import { IonicModule } from "@ionic/angular";
 
-import { EmployeeListPage } from './employee-list.page';
-import { ScrollingModule  } from '@angular/cdk/scrolling';
+import { EmployeeListPage } from "./employee-list.page";
+import { ScrollingModule } from "@angular/cdk/scrolling";
 
 const routes: Routes = [
   {
-    path: '',
-    component: EmployeeListPage
-  }
+    path: "",
+    component: EmployeeListPage,
+  },
 ];
 
 @NgModule({
@@ -21,8 +21,8 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     ScrollingModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [EmployeeListPage]
+  declarations: [EmployeeListPage],
 })
 export class EmployeeListPageModule {}

@@ -10,6 +10,17 @@
       "StackName": "amplify-platformdemo-dev-103536",
       "StackId": "arn:aws:cloudformation:us-west-2:068591690524:stack/amplify-platformdemo-dev-103536/f6a61250-9658-11ec-930d-0a6902bdfebd",
       "AmplifyAppId": "d1th2ubtu9bmgl"
+    },
+    "categories": {
+      "auth": {
+        "undefined": {}
+      },
+      "interactions": {
+        "lexfce23e3e": {
+          "deploymentBucketName": "amplify-platformdemo-dev-103536-deployment",
+          "s3Key": "amplify-builds/lexfce23e3e-554d772b734472664944-build.zip"
+        }
+      }
     }
   }
 }

@@ -1,0 +1,130 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateEmployee {
+  onCreateEmployee {
+    id
+    firstName
+    lastName
+    office
+    contactEmail
+    contactPhone
+    contactCell
+    birthDate
+    title
+    department
+    imagesLarge
+    imagesMedium
+    imagesThumbnail
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateEmployee {
+  onUpdateEmployee {
+    id
+    firstName
+    lastName
+    office
+    contactEmail
+    contactPhone
+    contactCell
+    birthDate
+    title
+    department
+    imagesLarge
+    imagesMedium
+    imagesThumbnail
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteEmployee {
+  onDeleteEmployee {
+    id
+    firstName
+    lastName
+    office
+    contactEmail
+    contactPhone
+    contactCell
+    birthDate
+    title
+    department
+    imagesLarge
+    imagesMedium
+    imagesThumbnail
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateExpense {
+  onCreateExpense {
+    id
+    category
+    merchant
+    note
+    cost
+    date
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateExpense {
+  onUpdateExpense {
+    id
+    category
+    merchant
+    note
+    cost
+    date
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteExpense {
+  onDeleteExpense {
+    id
+    category
+    merchant
+    note
+    cost
+    date
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateProduct {
+  onCreateProduct {
+    name
+    price
+    image
+    saleCategory
+    quantity
+    id
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateProduct {
+  onUpdateProduct {
+    name
+    price
+    image
+    saleCategory
+    quantity
+    id
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteProduct {
+  onDeleteProduct {
+    name
+    price
+    image
+    saleCategory
+    quantity
+    id
+    createdAt
+    updatedAt
+  }
+}
