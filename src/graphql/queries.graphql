@@ -1,0 +1,108 @@
+# this is an auto generated file. This will be overwritten
+query GetEmployee($id: ID!) {
+  getEmployee(id: $id) {
+    id
+    firstName
+    lastName
+    office
+    contactEmail
+    contactPhone
+    contactCell
+    birthDate
+    title
+    department
+    imagesLarge
+    imagesMedium
+    imagesThumbnail
+    createdAt
+    updatedAt
+  }
+}
+query ListEmployees(
+  $filter: ModelEmployeeFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listEmployees(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      firstName
+      lastName
+      office
+      contactEmail
+      contactPhone
+      contactCell
+      birthDate
+      title
+      department
+      imagesLarge
+      imagesMedium
+      imagesThumbnail
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetExpense($id: ID!) {
+  getExpense(id: $id) {
+    id
+    category
+    merchant
+    note
+    cost
+    date
+    createdAt
+    updatedAt
+  }
+}
+query ListExpenses(
+  $filter: ModelExpenseFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listExpenses(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      category
+      merchant
+      note
+      cost
+      date
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetProduct($id: ID!) {
+  getProduct(id: $id) {
+    name
+    price
+    image
+    saleCategory
+    quantity
+    id
+    createdAt
+    updatedAt
+  }
+}
+query ListProducts(
+  $filter: ModelProductFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listProducts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      name
+      price
+      image
+      saleCategory
+      quantity
+      id
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

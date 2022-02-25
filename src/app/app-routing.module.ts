@@ -16,6 +16,10 @@ const routes: Routes = [
     path: 'company-store-cart',
     loadChildren: () => import('./company-store-cart/company-store-cart.module').then( m => m.CompanyStoreCartPageModule)
   },
+  {
+    path: 'it-support',
+    loadChildren: () => import('./it-support/it-support.module').then( m => m.ItSupportPageModule)
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],

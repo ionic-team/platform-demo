@@ -1,0 +1,157 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateEmployee(
+  $input: CreateEmployeeInput!
+  $condition: ModelEmployeeConditionInput
+) {
+  createEmployee(input: $input, condition: $condition) {
+    id
+    firstName
+    lastName
+    office
+    contactEmail
+    contactPhone
+    contactCell
+    birthDate
+    title
+    department
+    imagesLarge
+    imagesMedium
+    imagesThumbnail
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateEmployee(
+  $input: UpdateEmployeeInput!
+  $condition: ModelEmployeeConditionInput
+) {
+  updateEmployee(input: $input, condition: $condition) {
+    id
+    firstName
+    lastName
+    office
+    contactEmail
+    contactPhone
+    contactCell
+    birthDate
+    title
+    department
+    imagesLarge
+    imagesMedium
+    imagesThumbnail
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteEmployee(
+  $input: DeleteEmployeeInput!
+  $condition: ModelEmployeeConditionInput
+) {
+  deleteEmployee(input: $input, condition: $condition) {
+    id
+    firstName
+    lastName
+    office
+    contactEmail
+    contactPhone
+    contactCell
+    birthDate
+    title
+    department
+    imagesLarge
+    imagesMedium
+    imagesThumbnail
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateExpense(
+  $input: CreateExpenseInput!
+  $condition: ModelExpenseConditionInput
+) {
+  createExpense(input: $input, condition: $condition) {
+    id
+    category
+    merchant
+    note
+    cost
+    date
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateExpense(
+  $input: UpdateExpenseInput!
+  $condition: ModelExpenseConditionInput
+) {
+  updateExpense(input: $input, condition: $condition) {
+    id
+    category
+    merchant
+    note
+    cost
+    date
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteExpense(
+  $input: DeleteExpenseInput!
+  $condition: ModelExpenseConditionInput
+) {
+  deleteExpense(input: $input, condition: $condition) {
+    id
+    category
+    merchant
+    note
+    cost
+    date
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateProduct(
+  $input: CreateProductInput!
+  $condition: ModelProductConditionInput
+) {
+  createProduct(input: $input, condition: $condition) {
+    name
+    price
+    image
+    saleCategory
+    quantity
+    id
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateProduct(
+  $input: UpdateProductInput!
+  $condition: ModelProductConditionInput
+) {
+  updateProduct(input: $input, condition: $condition) {
+    name
+    price
+    image
+    saleCategory
+    quantity
+    id
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteProduct(
+  $input: DeleteProductInput!
+  $condition: ModelProductConditionInput
+) {
+  deleteProduct(input: $input, condition: $condition) {
+    name
+    price
+    image
+    saleCategory
+    quantity
+    id
+    createdAt
+    updatedAt
+  }
+}
