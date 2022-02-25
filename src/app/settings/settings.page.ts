@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { AuthenticationService } from '../services/authentication.service';
 import { ImplementationModalPage } from '../implementation-modal/implementation-modal.page';
 import { IonRouterOutlet, ModalController } from '@ionic/angular';
+import packageJson from '../../../package.json'
 
 @Component({
   selector: 'app-settings',
@@ -11,6 +12,7 @@ import { IonRouterOutlet, ModalController } from '@ionic/angular';
 })
 export class SettingsPage implements OnInit {
   public user: any;
+  public version: string;
 
   constructor(
     private authService: AuthenticationService, 
@@ -20,6 +22,8 @@ export class SettingsPage implements OnInit {
 
   async ngOnInit() {
     this.user = await this.authService.getUserInfo();
+    this.version = packageJson.version;
+
   }
   
   async logIn() {

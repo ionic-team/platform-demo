@@ -1,5 +1,6 @@
 <ion-header>
   <ion-toolbar>
+    <ion-title>People</ion-title>
     <ion-buttons collapse="true" slot="end">
       <ion-button (click)="openImplModal()" >
         <ion-icon name="information-circle-outline"  size="large"
@@ -7,7 +8,6 @@
         </ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>People</ion-title>
   </ion-toolbar>
 </ion-header> 
 
@@ -20,7 +20,8 @@
     maxBufferPx="1350"
     (scrolledIndexChange)="checkNextPage($event, '')">
     
-    <ion-header collapse="condense">              
+    <!-- Doesn't work with cdk virtual scroll yet. -->
+    <!-- <ion-header collapse="condense">              
       <ion-toolbar>
         <ion-buttons collapse="true" (click)="openImplModal()" slot="end">
           <ion-button slot="end">
@@ -31,7 +32,7 @@
         </ion-buttons>
         <ion-title size="large">People</ion-title>
       </ion-toolbar>
-    </ion-header>
+    </ion-header> -->
     <ion-list>
       <ion-item
         *cdkVirtualFor="let employee of employees; trackBy: trackByFn"
