@@ -2,18 +2,27 @@ import { Component } from '@angular/core';
 import { Capacitor } from '@capacitor/core';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import { SplashScreen } from '@capacitor/splash-screen';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  constructor() {
+  constructor(private router: Router) {
     this.initializeApp();
   }
 
   initializeApp() {
     if (Capacitor.isNativePlatform()) {
+
+      const { Plugins } = Capacitor;
+
+      Plugins.Watch.addListener('message', (e) => {
+        console.log('GOT MESSAGE', e);
+        this.router.navigate([`/tabs/${e.tab}`]);
+      });
+
 
       StatusBar.setStyle({ style: Style.Light });
 

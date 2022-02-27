@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "platformdemo2_identitypool_be3a600e",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "platformdemo2",
+    "sharedId": "be3a600e",
+    "serviceName": "Cognito",
+    "useDefault": "manual"
+  }
+}

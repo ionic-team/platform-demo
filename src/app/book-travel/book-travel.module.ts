@@ -4,7 +4,9 @@ import { FormsModule } from "@angular/forms";
 
 import { IonicModule } from "@ionic/angular";
 
-import { LegacyAmplifyUiModule } from "@aws-amplify/ui-angular/legacy";
+// import { LegacyAmplifyUiModule } from "@aws-amplify/ui-angular/legacy";
+import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
+
 
 import { BookTravelPageRoutingModule } from "./book-travel-routing.module";
 
@@ -15,7 +17,7 @@ import { BookTravelPage } from "./book-travel.page";
     CommonModule,
     FormsModule,
     IonicModule,
-    LegacyAmplifyUiModule,
+    AmplifyUIAngularModule,
     BookTravelPageRoutingModule,
   ],
   declarations: [BookTravelPage],

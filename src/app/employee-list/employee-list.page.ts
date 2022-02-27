@@ -7,6 +7,9 @@ import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 import { ImplementationModalPage } from '../implementation-modal/implementation-modal.page';
 import { ModalController } from '@ionic/angular';
 import { IonRouterOutlet } from '@ionic/angular';
+import { Predictions } from 'aws-amplify';
+
+declare var window: any;
 
 @Component({
   selector: 'app-employee-list',
@@ -21,7 +24,13 @@ export class EmployeeListPage implements OnInit {
   page = 0;
   showLoading = false;
   pager$ = new BehaviorSubject(undefined);
+
+  // @ViewChild('player') player: HTMLAudioElement;
+  recorder: any;
+  stream: any;
+
   @ViewChild(CdkVirtualScrollViewport, { static: true }) viewport: CdkVirtualScrollViewport;
+
   currentSearchQuery: string = "";
 
   constructor(private employeeService: EmployeeService, public modalController: ModalController, 
@@ -82,5 +91,52 @@ export class EmployeeListPage implements OnInit {
     modal.onDidDismiss().then((result) => { });
     
     return await modal.present();
+  }
+
+  async startVoiceCapture() {
+    console.log('Starting capture');
+    const constraints = { video: false, audio: true };
+
+    try {
+      this.stream = await navigator.mediaDevices.getUserMedia(constraints);
+    } catch (error) {
+      throw new Error(`
+      MediaDevices.getUserMedia() threw an error. 
+      Stream did not open.
+      ${error.name} - 
+      ${error.message}
+    `);
+    }
+
+    this.recorder = new window.MediaRecorder(this.stream);
+
+    this.recorder.addEventListener('dataavailable', async ({ data }) => {
+      console.log('data available', data);
+
+      try {
+        await Predictions.convert({
+          transcription: {
+            source: data,
+            language: 'en-US'
+          }
+        }, {
+          providerName: 'AmazonAIPredictionsProvider'
+        });
+      } catch (e) {
+        console.error('Unable to convert speec', e);
+        throw e;
+      }
+    });
+
+    this.recorder.start();
+    return this.recorder;
+  }
+
+  async endVoiceCapture() {
+    console.log('Ending capture');
+
+
+    this.recorder?.stop();
+    this.stream.getTracks().forEach((track) => track.stop());
   }
 }

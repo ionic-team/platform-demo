@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "platformdemo2",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/max/git/platform-demo/amplify/backend/api/platformdemo2/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

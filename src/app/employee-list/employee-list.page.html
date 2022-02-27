@@ -58,4 +58,10 @@
     </ion-list>
     <ion-spinner name="crescent" *ngIf="showLoading"></ion-spinner>
   </cdk-virtual-scroll-viewport>
+  <ion-fab horizontal="center" vertical="bottom" slot="fixed">
+    <ion-fab-button (pointerdown)="startVoiceCapture()" (pointerup)="endVoiceCapture()">
+      <ion-icon name="mic"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <audio #player></audio>
 </ion-content>

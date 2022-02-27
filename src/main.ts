@@ -18,7 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 defineCustomElements(window);
 
-import Amplify from "aws-amplify";
+import Amplify, { Predictions } from "aws-amplify";
 import aws_exports from "./aws-exports";
+import { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
 
 Amplify.configure(aws_exports);
+
+//Amplify.register(Predictions);
+Amplify.addPluggable(new AmazonAIPredictionsProvider());

@@ -1,0 +1,202 @@
+
+  System:
+    OS: macOS 11.6.1
+    CPU: (16) x64 Intel(R) Core(TM) i9-9980HK CPU @ 2.40GHz
+    Memory: 1.83 GB / 32.00 GB
+    Shell: 3.2.57 - /bin/bash
+  Binaries:
+    Node: 14.18.3 - ~/.volta/tools/image/node/14.18.3/bin/node
+    Yarn: 1.22.17 - ~/.volta/bin/yarn
+    npm: 6.14.15 - ~/.volta/tools/image/node/14.18.3/bin/npm
+  Browsers:
+    Brave Browser: 87.1.18.70
+    Chrome: 98.0.4758.109
+    Edge: 98.0.1108.62
+    Firefox: 73.0.1
+    Firefox Developer Edition: 98.0
+    Safari: 15.1
+    Safari Technology Preview: 15.4
+  npmPackages:
+    @angular-devkit/build-angular: ~12.0.1 => 12.0.5 
+    @angular-devkit/core: ^12.1.1 => 12.2.1 (12.0.5, 12.1.4)
+    @angular-devkit/core/node:  undefined ()
+    @angular-devkit/schematics: ^12.1.1 => 12.2.1 (12.1.4)
+    @angular-devkit/schematics/tasks:  undefined ()
+    @angular-devkit/schematics/testing:  undefined ()
+    @angular-devkit/schematics/tools:  undefined ()
+    @angular/animations: ^12.2.0 => 12.2.1 
+    @angular/animations/browser:  undefined ()
+    @angular/animations/browser/testing:  undefined ()
+    @angular/cdk: ^12.2.0 => 12.2.1 
+    @angular/cdk/a11y:  undefined ()
+    @angular/cdk/accordion:  undefined ()
+    @angular/cdk/bidi:  undefined ()
+    @angular/cdk/clipboard:  undefined ()
+    @angular/cdk/coercion:  undefined ()
+    @angular/cdk/collections:  undefined ()
+    @angular/cdk/drag-drop:  undefined ()
+    @angular/cdk/keycodes:  undefined ()
+    @angular/cdk/layout:  undefined ()
+    @angular/cdk/observers:  undefined ()
+    @angular/cdk/overlay:  undefined ()
+    @angular/cdk/platform:  undefined ()
+    @angular/cdk/portal:  undefined ()
+    @angular/cdk/scrolling:  undefined ()
+    @angular/cdk/stepper:  undefined ()
+    @angular/cdk/table:  undefined ()
+    @angular/cdk/testing:  undefined ()
+    @angular/cdk/testing/protractor:  undefined ()
+    @angular/cdk/testing/selenium-webdriver:  undefined ()
+    @angular/cdk/testing/testbed:  undefined ()
+    @angular/cdk/text-field:  undefined ()
+    @angular/cdk/tree:  undefined ()
+    @angular/cli: ~12.1.1 => 12.1.4 
+    @angular/common: ^12.2.0 => 12.2.1 
+    @angular/common/http:  undefined ()
+    @angular/common/http/testing:  undefined ()
+    @angular/common/testing:  undefined ()
+    @angular/common/upgrade:  undefined ()
+    @angular/compiler: ^12.1.1 => 12.2.1 (9.0.0)
+    @angular/compiler-cli: ^12.1.1 => 12.2.1 
+    @angular/compiler/testing:  undefined ()
+    @angular/core: ^12.2.0 => 12.2.1 (9.0.0)
+    @angular/core/testing:  undefined ()
+    @angular/forms: ^12.2.0 => 12.2.1 
+    @angular/language-service: ^12.1.1 => 12.2.1 
+    @angular/platform-browser: ^12.2.0 => 12.2.1 
+    @angular/platform-browser-dynamic: ^12.2.0 => 12.2.1 
+    @angular/platform-browser-dynamic/testing:  undefined ()
+    @angular/platform-browser/animations:  undefined ()
+    @angular/platform-browser/testing:  undefined ()
+    @angular/platform-server: ~12.2.0 => 12.2.1 
+    @angular/platform-server/init:  undefined ()
+    @angular/platform-server/testing:  undefined ()
+    @angular/pwa: ^12.2.0 => 12.2.1 
+    @angular/router: ^12.2.0 => 12.2.1 
+    @angular/router/testing:  undefined ()
+    @angular/router/upgrade:  undefined ()
+    @angular/service-worker: ^12.2.0 => 12.2.1 
+    @angular/service-worker/config:  undefined ()
+    @aws-amplify/ui-angular: ^2.1.3 => 2.1.3 
+    @aws-amplify/ui-angular/legacy:  undefined ()
+    @capacitor/android: ^3.1.0 => 3.1.2 
+    @capacitor/app: ^1.0.2 => 1.0.2 
+    @capacitor/camera: ^1.0.3 => 1.0.3 
+    @capacitor/cli: ^3.1.0 => 3.1.2 
+    @capacitor/core: ^3.1.0 => 3.1.2 
+    @capacitor/filesystem: ^1.0.2 => 1.0.2 
+    @capacitor/haptics: ^1.0.2 => 1.0.2 
+    @capacitor/ios: ^3.1.0 => 3.1.2 
+    @capacitor/keyboard: ^1.0.2 => 1.0.2 
+    @capacitor/splash-screen: ^1.0.2 => 1.1.0 
+    @capacitor/status-bar: ^1.0.2 => 1.0.2 
+    @ionic-enterprise/apple-pay: ^1.0.1 => 1.0.1 
+    @ionic-enterprise/auth: ^3.9.0 => 3.9.0 
+    @ionic-enterprise/google-pay: ^1.0.0 => 1.0.0 
+    @ionic-enterprise/identity-vault: ^5.1.1 => 5.1.1 
+    @ionic-enterprise/secure-storage: ^2.1.1 => 2.1.1 
+    @ionic-native/core: ^5.34.0 => 5.35.0 
+    @ionic/angular: ^5.6.11 => 5.6.13 
+    @ionic/angular-toolkit: ^4.0.0 => 4.0.0 
+    @ionic/pwa-elements: ^3.0.2 => 3.0.2 
+    @ionic/storage-angular: ^3.0.6 => 3.0.6 
+    @types/dom-mediacapture-record: ^1.0.11 => 1.0.11 
+    @types/jasmine: ^3.7.8 => 3.8.2 
+    @types/jasminewd2: ~2.0.10 => 2.0.10 
+    @types/node: ^16.0.1 => 16.6.1 
+    @vercel/node: ^1.12.1 => 1.12.1 
+    aws-amplify: ^4.3.14 => 4.3.14 
+    axios: ^0.21.1 => 0.21.1 (0.21.4)
+    codelyzer: ^6.0.2 => 6.0.2 
+    cordova-plugin-ionic: 5.4.7 => 5.4.7 ()
+    cordova-plugin-whitelist: ^1.3.5 => 1.3.5 
+    core-js: ^3.15.2 => 3.16.2 (3.12.0)
+    example-typescript:  1.0.0 
+    ionicpwaelements-loader:  undefined ()
+    jasmine-core: ~3.8.0 => 3.8.0 (2.8.0)
+    jasmine-spec-reporter: ~7.0.0 => 7.0.0 
+    karma: ~6.3.4 => 6.3.4 
+    karma-chrome-launcher: ~3.1.0 => 3.1.0 
+    karma-coverage-istanbul-reporter: ~3.0.3 => 3.0.3 
+    karma-jasmine: ~4.0.1 => 4.0.1 
+    karma-jasmine-html-reporter: ^1.6.0 => 1.7.0 
+    lib:  0.0.1 
+    node-example:  1.0.0 
+    prettier: ^2.3.2 => 2.3.2 
+    protractor: ~7.0.0 => 7.0.0 
+    protractor-example:  1.0.0 
+    rxjs: ~6.5.3 => 6.5.5 (6.6.7)
+    rxjs/ajax:  undefined ()
+    rxjs/fetch:  undefined ()
+    rxjs/internal-compatibility:  undefined ()
+    rxjs/operators:  undefined ()
+    rxjs/testing:  undefined ()
+    rxjs/webSocket:  undefined ()
+    ts-node: ^10.0.0 => 10.2.0 (8.9.1)
+    tslib: ^2.3.0 => 2.3.1 (1.14.1, 2.2.0)
+    tslint: ~6.1.0 => 6.1.3 
+    typescript: ~4.2.4 => 4.2.4 (4.3.4, 3.9.10)
+    typescript-example:  1.0.0 
+    zone-mix:  undefined ()
+    zone-node:  undefined ()
+    zone-testing:  undefined ()
+    zone.js: ~0.11.4 => 0.11.4 (0.10.3)
+    zone.js/async-test:  undefined ()
+    zone.js/async-test.min:  undefined ()
+    zone.js/fake-async-test:  undefined ()
+    zone.js/fake-async-test.min:  undefined ()
+    zone.js/jasmine-patch:  undefined ()
+    zone.js/jasmine-patch.min:  undefined ()
+    zone.js/long-stack-trace-zone:  undefined ()
+    zone.js/long-stack-trace-zone.min:  undefined ()
+    zone.js/mocha-patch:  undefined ()
+    zone.js/mocha-patch.min:  undefined ()
+    zone.js/proxy:  undefined ()
+    zone.js/proxy.min:  undefined ()
+    zone.js/sync-test:  undefined ()
+    zone.js/sync-test.min:  undefined ()
+    zone.js/task-tracking:  undefined ()
+    zone.js/task-tracking.min:  undefined ()
+    zone.js/webapis-media-query:  undefined ()
+    zone.js/webapis-media-query.min:  undefined ()
+    zone.js/webapis-notification:  undefined ()
+    zone.js/webapis-notification.min:  undefined ()
+    zone.js/webapis-rtc-peer-connection:  undefined ()
+    zone.js/webapis-rtc-peer-connection.min:  undefined ()
+    zone.js/webapis-shadydom:  undefined ()
+    zone.js/webapis-shadydom.min:  undefined ()
+    zone.js/wtf:  undefined ()
+    zone.js/wtf.min:  undefined ()
+    zone.js/zone-bluebird:  undefined ()
+    zone.js/zone-bluebird.min:  undefined ()
+    zone.js/zone-error:  undefined ()
+    zone.js/zone-error.min:  undefined ()
+    zone.js/zone-legacy:  undefined ()
+    zone.js/zone-legacy.min:  undefined ()
+    zone.js/zone-patch-canvas:  undefined ()
+    zone.js/zone-patch-canvas.min:  undefined ()
+    zone.js/zone-patch-cordova:  undefined ()
+    zone.js/zone-patch-cordova.min:  undefined ()
+    zone.js/zone-patch-electron:  undefined ()
+    zone.js/zone-patch-electron.min:  undefined ()
+    zone.js/zone-patch-fetch:  undefined ()
+    zone.js/zone-patch-fetch.min:  undefined ()
+    zone.js/zone-patch-jsonp:  undefined ()
+    zone.js/zone-patch-jsonp.min:  undefined ()
+    zone.js/zone-patch-message-port:  undefined ()
+    zone.js/zone-patch-message-port.min:  undefined ()
+    zone.js/zone-patch-promise-test:  undefined ()
+    zone.js/zone-patch-promise-test.min:  undefined ()
+    zone.js/zone-patch-resize-observer:  undefined ()
+    zone.js/zone-patch-resize-observer.min:  undefined ()
+    zone.js/zone-patch-rxjs:  undefined ()
+    zone.js/zone-patch-rxjs-fake-async:  undefined ()
+    zone.js/zone-patch-rxjs-fake-async.min:  undefined ()
+    zone.js/zone-patch-rxjs.min:  undefined ()
+    zone.js/zone-patch-socket-io:  undefined ()
+    zone.js/zone-patch-socket-io.min:  undefined ()
+    zone.js/zone-patch-user-media:  undefined ()
+    zone.js/zone-patch-user-media.min:  undefined ()
+  npmGlobalPackages:
+    npm: 6.14.15
+
